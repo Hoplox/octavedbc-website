@@ -99,12 +99,12 @@ const Header = () => {
     <Flex as="header" >
       
       <Stack direction="column" spacing={8} alignItems={'top'}>
-            <Heading paddingTop={2} verticalAlign={"middle"} as="h1" size="md" pos="fixed" fontWeight={"900"}
+            <Heading paddingTop={2} verticalAlign={"middle"} color={"#94bfbe"} as="h1" size="md" pos="fixed" fontWeight={"bold"}
             transitionProperty='color'
             transitionDuration='0.75s'
             transitionTimingFunction='ease-in-out'
             _hover={{
-              color:'gray.500'
+              color:'white'
             }}>
               <Link href="/#">octavedbc.com</Link>
             </Heading>
@@ -113,17 +113,17 @@ const Header = () => {
             <br/>
             <VStack align={"start"} pos="fixed" spacing={4}>
                 <NavLink href="/#projects" >
-                  <Text transition= "all 0.3s ease" _hover={{transform: 'translateX(8px)', cursor: "pointer", fontWeight: "600" }}>
+                  <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
                   Projects
                   </Text>
                 </NavLink>
               <NavLink href="/#experience">
-              <Text transition= "all 0.3s ease" _hover={{transform: 'translateX(8px)', cursor: "pointer", fontWeight: "600" }}>
+              <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
                   Experience
                 </Text>
               </NavLink>
               <ReactLink target="_blank" href="https://www.linkedin.com/in/octavedbc/" _hover={{textDecoration: "none"}}>
-                <Text transition= "all 0.3s ease" _hover={{transform: 'translateX(8px)', cursor: "pointer", fontWeight: "600" }}>
+                <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
                   Resume
                 </Text>
               </ReactLink>
