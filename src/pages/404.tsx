@@ -16,10 +16,12 @@ const Page404 = () => {
 
   return (
     <>
+
+    <Box textAlign={"left"} width={"100%"}>
       <MotionBox
         animate={{ y: 20 }}
         transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
-        width={["100%", "70%", "60%", "60%"]}
+        width={["100%", "100%", "100%", "100%"]}
         margin="0 auto"
       >
         <Image
@@ -40,6 +42,7 @@ const Page404 = () => {
           </Link>
         </Box>
       </Box>
+    </Box>
     </>
   );
 };

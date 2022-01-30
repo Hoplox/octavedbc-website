@@ -55,6 +55,7 @@ import {
   IconButton,
   Avatar,
   useToast,
+  Center,
 } from "@chakra-ui/react";
 import {Link as ReactLink} from '@chakra-ui/react';
 import Link from "next/link";
@@ -78,18 +79,18 @@ const IndexPage = () => {
   return (
     <>
       <Box textAlign={"left"} maxWidth={"100%"}>
-        <Heading paddingTop={48} as="h2" textAlign={"left"} fontWeight="medium" fontSize={{ base: "2xl", md: "6xl" }} transition= "transform 0.3s ease"
+        <Heading paddingTop={36} as="h2" textAlign={"left"} fontWeight="medium" fontSize={{ base: "2xl", md: "6xl" }} transition= "transform 0.3s ease"
           _hover={{
             transform: 'translateX(10px)',
           }}>
-          Octave, <Text color={"#94bfbe"} display={"inline-flex"}>Full Stack Engineer.</Text>
+          Octave <Text color={"#94bfbe"} display={"inline-flex"}>De Baynast Cheval</Text>
           <br/>
         </Heading>
         <Box paddingTop={12}/>
 
-        <HStack><Text maxWidth={"80%"} fontSize={"xl"} fontWeight={"bold"} color={"white"}>Caffeine Enthusiast currently working at <Text textDecoration={"underline"} display={"inline-flex"}>Red Bull</Text> as a Full Stack Engineer.</Text></HStack>
+        <HStack><Text maxWidth={{base: "100%", md: "80%"}} fontSize={"xl"} fontWeight={"bold"} color={"white"}>Analyst previously at <Text class="inlineUnderline">Candriam</Text>, <Text class="inlineUnderline">Kickstart</Text> and <Text class="inlineUnderline">Bluecrest</Text>.</Text></HStack>
         <br/>
-        <Text maxWidth={"80%"} fontSize={"xl"} fontWeight={"bold"} color={"gray"}>Hello, I am Octave De Baynast Cheval. I am a red bull addict. I need help to overcome my caffeine addiction, my Pret subscription certainly does not help at all. Me and my flatmate Adam Cao (he created this really cool website) go to Pret atleast twice a day; it's really bad.</Text>
+        <Text maxWidth={{base: "100%", md: "80%"}}  fontSize={"xl"} fontWeight={"bold"} color={"gray"}>Hello, I am Octave De Baynast Cheval. I'm currently an Economics and Management student at King's College London with a huge passion for Environmental, social and corporate governance. </Text>
         
         <HStack marginTop={12}>
         <Text fontWeight={"bold"}>Get in contact</Text>
@@ -131,7 +132,7 @@ const IndexPage = () => {
         <Stack>
           <HStack>
           <Link href="#">
-              <Box role="group" background={"url(images/phold1.webp)"} bgSize={"cover"} width={"60%"} height={80} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/phold1.webp)"} bgSize={"cover"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -151,7 +152,7 @@ const IndexPage = () => {
               </Box>
             </Link>
             <Link href="#">
-              <Box role="group" background={"url(images/phold5.webp)"} bgSize={"cover"} width={"40%"} height={80} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/phold5.webp)"} bgSize={"cover"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -174,7 +175,7 @@ const IndexPage = () => {
           <HStack>
               
             <Link href="#">
-              <Box role="group" background={"url(images/phold6.webp)"} bgSize={"cover"} width={"40%"} height={80} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/phold6.webp)"} bgSize={"cover"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -195,7 +196,7 @@ const IndexPage = () => {
             </Link>
 
             <Link href="#">
-              <Box role="group" background={"url(images/phold7.webp)"} bgSize={"cover"} width={"60%"} height={80} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/phold7.webp)"} bgSize={"cover"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -221,94 +222,91 @@ const IndexPage = () => {
         <Divider id="experience" colorScheme="white" marginTop={24} marginBottom={12} />
 
         <Heading marginBottom={12} fontWeight={"light"}>Experience</Heading>
+        <HStack>
+          <VStack align={"left"} maxWidth={"100%"} spacing={16} marginBottom={24}>
 
-        <VStack align={"left"} maxWidth={"100%"} spacing={16} marginBottom={24}>
+            <Stack direction={{base: "column", md: "row"}} spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
+              <VStack width={{base: "100%", md: "20%"}} align={"left"}>
+                <Heading fontSize={{base: "md", md: "md", 'xl': "xl"}}>
+                  ESG Analyst
+                </Heading>
+              </VStack>
+              
+              <Box maxWidth={{base: "100%", md: "80%"}}>
+                <HStack>
+                  <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    Candriam 
+                  </Heading>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"}  whiteSpace={"pre"}>
+                    Paris
+                  </Heading>
+                  <Spacer/>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    JUN 2021 - SEP 2021
+                  </Heading>
+                </HStack>
+                <br/>
+                <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"light"} overflowWrap="break-word" >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </Heading>
+              </Box>
+            </Stack>
 
-          <HStack spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
-            <VStack width={"20%"} align={"left"}>
-              <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}}>
-                ESG Analyst
-              </Heading>
-            </VStack>
-            
-            <Box maxWidth={"80%"}>
-              <HStack>
-                <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  Candriam 
+            <Stack direction={{base: "column", md: "row"}} spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
+              <VStack width={{base: "100%", md: "20%"}} align={"left"}>
+                <Heading fontSize={{base: "md", md: "md", 'xl': "xl"}}>
+                  Co-Director
                 </Heading>
-                <Heading color="gray" fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"}  whiteSpace={"pre"}>
-                  Paris
+              </VStack>
+              
+              <Box maxWidth={{base: "100%", md: "80%"}}>
+                <HStack>
+                  <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    Kickstart Global
+                  </Heading>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"}  whiteSpace={"pre"}>
+                    London
+                  </Heading>
+                  <Spacer/>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    MAR 2020 - JUN 2021
+                  </Heading>
+                </HStack>
+                <br/>
+                <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"light"} overflowWrap="break-word" >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </Heading>
-                <Spacer/>
-                <Heading color="gray" fontSize={{base: "xl", md: "md", '2xl': "xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  JUN 2021 - SEP 2021
-                </Heading>
-              </HStack>
-              <br/>
-              <Heading fontSize={{base: "sm", md: "md", '2xl': "xl"}} fontWeight={"light"} overflowWrap="break-word" >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </Heading>
-            </Box>
-          </HStack>
+              </Box>
+            </Stack>
 
-          <HStack spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
-            <VStack width={"20%"} align={"left"}>
-              <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}}>
-                Co-Director
-              </Heading>
-            </VStack>
-            
-            <Box maxWidth={"80%"}>
-              <HStack>
-                <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  Kickstart Global
+            <Stack direction={{base: "column", md: "row"}} spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
+              <VStack width={{base: "100%", md: "20%"}} align={"left"}>
+                <Heading fontSize={{base: "md", md: "md", 'xl': "xl"}}>
+                  Intern
                 </Heading>
-                <Heading color="gray" fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"}  whiteSpace={"pre"}>
-                  London
+              </VStack>
+              
+              <Box maxWidth={{base: "100%", md: "80%"}}>
+                <HStack>
+                  <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    Bluecrest
+                  </Heading>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"}  whiteSpace={"pre"}>
+                    London
+                  </Heading>
+                  <Spacer/>
+                  <Heading color="gray" fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"normal"} whiteSpace={"pre"}>
+                    JUL 2018 - AUG 2018
+                  </Heading>
+                </HStack>
+                <br/>
+                <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"light"} overflowWrap="break-word" >
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </Heading>
-                <Spacer/>
-                <Heading color="gray" fontSize={{base: "xl", md: "md", '2xl': "xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  MAR 2020 - JUN 2021
-                </Heading>
-              </HStack>
-              <br/>
-              <Heading fontSize={{base: "sm", md: "md", '2xl': "xl"}} fontWeight={"light"} overflowWrap="break-word" >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </Heading>
-            </Box>
-          </HStack>
-
-          <HStack spacing={0} maxWidth={"100%"} align={"start"} borderLeftWidth={4} borderColor={"transparent"} transition= "all 0.2s ease"_hover={{paddingLeft: 6,borderLeftWidth: 4,borderColor:"white"}}> 
-            <VStack width={"20%"} align={"left"}>
-              <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}}>
-                Intern
-              </Heading>
-            </VStack>
-            
-            <Box maxWidth={"80%"}>
-              <HStack>
-                <Heading fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  Bluecrest
-                </Heading>
-                <Heading color="gray" fontSize={{base: "xl", md: "xl", '2xl': "2xl"}} fontWeight={"normal"}  whiteSpace={"pre"}>
-                  London
-                </Heading>
-                <Spacer/>
-                <Heading color="gray" fontSize={{base: "xl", md: "md", '2xl': "xl"}} fontWeight={"normal"} whiteSpace={"pre"}>
-                  JUL 2018 - AUG 2018
-                </Heading>
-              </HStack>
-              <br/>
-              <Heading fontSize={{base: "sm", md: "md", '2xl': "xl"}} fontWeight={"light"} overflowWrap="break-word" >
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              </Heading>
-            </Box>
-          </HStack>
-        </VStack>
-
-
-        <Link href="#"><HStack role="group" _hover={{ cursor: "pointer"}}><Heading _hover={{ textDecoration: "underline"}}>Find out more about me</Heading> <Box transition= "all 0.3s ease" _groupHover={{transform: 'translateX(8px)'}}><BsArrowRight size={48}/></Box> </HStack></Link>
-
+              </Box>
+            </Stack>
+          </VStack>
+        </HStack>
       </Box>
     </>
   );

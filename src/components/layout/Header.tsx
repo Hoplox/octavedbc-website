@@ -1,49 +1,16 @@
-import { ReactNode } from "react";
 import React from "react";
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import {
-  HStack,
-  IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
   Text,
   Stack,
-  Spacer,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
-  Divider,
-  useToast,
-  useColorMode,
+  HStack,
   VStack,
-  Progress,
+  Spacer,
 } from '@chakra-ui/react';
 import {Link as ReactLink} from '@chakra-ui/react';
 import Link from "next/link";
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import ThemeToggle from "./ThemeToggle";
-import { RiMoonFill, RiSunLine } from "react-icons/ri";
-
 import { useRouter } from "next/router";
-
-import { BsBoxArrowInUpRight } from 'react-icons/bs'
-import { BiDownArrow, BiMessageRoundedDots, BiCopy, BiChevronDown } from 'react-icons/bi'
-
 import { useEffect, useState } from "react";
-
-const Links = ['SCipher', 'Projects', 'Resume'];
 
 const NavLink = ({ children, href } : {children:any, href:any}) => {
   const child = React.Children.only(children);
@@ -59,12 +26,6 @@ const NavLink = ({ children, href } : {children:any, href:any}) => {
 };
 
 const Header = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const { colorMode, toggleColorMode } = useColorMode();
-  const toast = useToast();
-  const id = 'test-toast'
-  const modeColor = useColorModeValue('white', 'gray.800')
-  const modeColor2 = useColorModeValue('gray.800', 'white')
 
   const [height, setHeight] = useState(0);
 
@@ -96,45 +57,44 @@ const Header = () => {
   }, []);
 
   return (
-    <Flex as="header" >
+    <Flex as="header">
       
-      <Stack direction="column" spacing={8} alignItems={'top'}>
-            <Heading paddingTop={2} verticalAlign={"middle"} color={"#94bfbe"} as="h1" size="md" pos="fixed" fontWeight={"bold"}
+      <HStack spacing={{base: 0, md: 2, '2xl': 8}} alignItems={'top'} width="100%" fontSize={{base: "xs", md: "sm"}}>
+            <Heading verticalAlign={"middle"} color={"white"} as="h1" fontSize={{base: "xs", md: "md"}} fontWeight={"bold"}
             transitionProperty='color'
             transitionDuration='0.75s'
             transitionTimingFunction='ease-in-out'
             _hover={{
-              color:'white'
+              color:'#94bfbe'
             }}>
-              <Link href="/#">octavedbc.com</Link>
+              <Link href="/#">octavedbc</Link>
             </Heading>
-
+          <Spacer/>
           <Box fontWeight={"normal"}>
-            <br/>
-            <VStack align={"start"} pos="fixed" spacing={4}>
+            <HStack spacing={8}>
                 <NavLink href="/#projects" >
-                  <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
+                  <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} paddingLeft={2} borderColor={"transparent"}  _hover={{borderColor:"white", cursor: "pointer" }}>
                   Projects
                   </Text>
                 </NavLink>
               <NavLink href="/#experience">
-              <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
+              <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} paddingLeft={2} borderColor={"transparent"}  _hover={{borderColor:"white", cursor: "pointer" }}>
                   Experience
                 </Text>
               </NavLink>
               <ReactLink target="_blank" href="https://www.linkedin.com/in/octavedbc/" _hover={{textDecoration: "none"}}>
-                <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} borderColor={"transparent"}  _hover={{paddingLeft: 2 ,borderColor:"white", cursor: "pointer" }}>
+                <Text fontWeight="500" transition= "all 0.2s ease" borderLeftWidth={2} paddingLeft={2} borderColor={"transparent"}  _hover={{borderColor:"white", cursor: "pointer" }}>
                   Resume
                 </Text>
               </ReactLink>
-            </VStack>
+            </HStack>
           </Box>
           {/*
           <Box  align={"start"} paddingTop={"55.75em"} paddingLeft={"20em"} transform= "rotate(90deg)" pos={"fixed"}>
             <Progress value={scrollY / height * 100} height={"2px"} width={"36em"} colorScheme={"whiteAlpha"}/>
           </Box>
           */}
-      </Stack>
+      </HStack>
           
     </Flex>
 

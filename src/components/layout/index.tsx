@@ -13,17 +13,14 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <HStack margin="0 auto" transition="0.5s ease-out" background={"#1f2022"} color="white"> {/*<Box margin="0 auto" maxWidth={1024} transition="0.5s ease-out"> */}
       <Spacer/>
-      <Box margin="8" align="center">
-        <Stack direction={"row"} maxWidth={{base: "100%", md: "75%" ,'2xl': "75%"}}>
+      <Box margin="8" align="center" maxWidth={{base: "90%", md: "80%" ,'2xl': "80%"}}>
           <Box marginTop={16}>
             <Header/>
           </Box>
-          <Spacer/>
-          <Box as="main" marginY={22}  margin="0 auto" paddingLeft={{base: 8, md: 64, '2xl': 96}} maxWidth={{base: 384 ,md:2048}}>
+          <Box as="main" marginY={22}  margin="0 auto"  maxWidth={{base: 384 ,md:1024}}>
             {children}
             <Box align="start" margin={0}><Footer/></Box>
           </Box>
-        </Stack>
       </Box>
       <Spacer/>
     </HStack>

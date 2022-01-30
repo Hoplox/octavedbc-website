@@ -16,3 +16,9 @@ mark {
   background-color: pink !important;
 }
 
+.inlineUnderline {
+  text-decoration: underline;
+  display: inline-flex;
+  text-decoration-color: #94bfbe;
+}
+
