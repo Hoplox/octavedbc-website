@@ -88,7 +88,7 @@ const IndexPage = () => {
         </Heading>
         <Box paddingTop={12}/>
 
-        <HStack><Text maxWidth={{base: "100%", md: "80%"}} fontSize={"xl"} fontWeight={"bold"} color={"white"}>Analyst previously at <Text class="inlineUnderline">Candriam</Text>, <Text class="inlineUnderline">Kickstart</Text> and <Text class="inlineUnderline">Bluecrest</Text>.</Text></HStack>
+        <HStack><Text maxWidth={{base: "100%", md: "80%"}} fontSize={"xl"} fontWeight={"bold"} color={"white"}>Analyst previously at <Text className="inlineUnderline">Candriam</Text>, <Text className="inlineUnderline">Kickstart</Text> and <Text className="inlineUnderline">Bluecrest</Text>.</Text></HStack>
         <br/>
         <Text maxWidth={{base: "100%", md: "80%"}}  fontSize={"xl"} fontWeight={"bold"} color={"gray"}>Hello, I am Octave De Baynast Cheval. I'm currently an Economics and Management student at King's College London with a huge passion for Environmental, social and corporate governance. </Text>
         

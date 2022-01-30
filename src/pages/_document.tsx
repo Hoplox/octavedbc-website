@@ -71,7 +71,7 @@ class MyDocument extends Document {
             href="/icons/apple-touch-icon.png"
           />
           */}
-          <link rel="shortcut icon" href="/images/turtle.png" />
+          <link rel="shortcut icon" href="/images/leaf.png" />
           <link rel="manifest" href="/manifest.json" />
         </Head>
         <body>
