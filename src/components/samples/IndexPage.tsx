@@ -131,8 +131,8 @@ const IndexPage = () => {
 
         <Stack>
           <HStack>
-          <Link href="#">
-              <Box role="group" background={"url(images/phold1.webp)"} bgSize={"cover"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
+            <Link href="#">
+              <Box role="group" background={"url(images/kclblockchain.png)"} bgSize={"contain"} bgPos={"center center"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -145,14 +145,14 @@ const IndexPage = () => {
                     color: "white"
                   }}>
                     <Spacer/>
-                    <Text align="left" fontWeight="bold" fontSize="3xl" >Hello</Text>
-                    <Text align="left" fontWeight="bold" fontSize="xl" >Description of project goes right here.</Text>
+                    <Text align="left" fontWeight="bold" fontSize="3xl" >KCL Blockchain</Text>
+                    <Text align="left" fontWeight="bold" fontSize="xl" > Established to provide a way for students to participate and engage with the blockchain space.</Text>
                   </VStack>
                 </Box>
               </Box>
             </Link>
             <Link href="#">
-              <Box role="group" background={"url(images/phold5.webp)"} bgSize={"cover"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/kickstart.png)"} bgSize={"contain"} bgPos={"center center"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -165,17 +165,19 @@ const IndexPage = () => {
                     color: "white"
                   }}>
                     <Spacer/>
-                    <Text align="left" fontWeight="bold" fontSize="3xl" >Hello</Text>
-                    <Text align="left" fontWeight="bold" fontSize="xl" >Description of project goes right here.</Text>
+                    <Text align="left" fontWeight="bold" fontSize="3xl" >Kickstart Global</Text>
+                    <Text align="left" fontWeight="bold" fontSize="xl" >Startup hub supporting students founders from day 0.</Text>
                   </VStack>
                 </Box>
               </Box>
             </Link>
           </HStack>
+
+          
           <HStack>
               
             <Link href="#">
-              <Box role="group" background={"url(images/phold6.webp)"} bgSize={"cover"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/inphi.png)"} bgSize={"contain"} bgPos={"center center"} width={"40%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -188,15 +190,15 @@ const IndexPage = () => {
                     color: "white"
                   }}>
                     <Spacer/>
-                    <Text align="left" fontWeight="bold" fontSize="3xl" >Hello</Text>
-                    <Text align="left" fontWeight="bold" fontSize="xl" >Description of project goes right here.</Text>
+                    <Text align="left" fontWeight="bold" fontSize="3xl" >Inphi</Text>
+                    <Text align="left" fontWeight="bold" fontSize="xl">Constructed and presented an investment outlook for the post-merger, combined company of Inphi and Marvell.</Text>
                   </VStack>
                 </Box>
               </Box>
             </Link>
 
             <Link href="#">
-              <Box role="group" background={"url(images/phold7.webp)"} bgSize={"cover"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
+              <Box role="group" background={"url(images/wip.png)"} bgSize={"contain"} bgPos={"center center"} width={"60%"} height={{base: 40, md: 80}} rounded={8} transition= "all 0.3s ease"
                 _hover={{
                   transform: 'translateY(-5px)',
                   boxShadow:'dark-lg',
@@ -215,7 +217,6 @@ const IndexPage = () => {
                 </Box>
               </Box>
             </Link>
-            
           </HStack>
         </Stack>
 
