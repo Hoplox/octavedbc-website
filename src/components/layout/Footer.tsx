@@ -69,7 +69,7 @@ export default function SmallWithSocial() {
         <Text>
           {new Date().getFullYear()} -{" "}
           <Text display={"inline-flex"} whiteSpace={"pre"}> designed & built by </Text>
-          <Link href="https://adamcao.dev" isExternal>
+          <Link href="https://adamcao.dev" isExternal _focus={{border:0 }}>
              adamcao.dev
           </Link>
         </Text>
