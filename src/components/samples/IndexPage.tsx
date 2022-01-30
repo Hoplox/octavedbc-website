@@ -99,7 +99,7 @@ const IndexPage = () => {
               <IconButton rounded={8} _focus={{border:0 }} aria-label="" marginBottom={1} size='xs' icon={<BiChevronDown size={24}/>} />
             </PopoverTrigger>
             <PopoverContent width={36} _focus={{border:0 }} border={0} marginTop={2} bg={"#333"} >
-              <PopoverBody >
+              <PopoverBody _focus={{border:0 }}>
                 <Stack align={"start"} spacing={0} padding={0}>
                   <Button fontWeight={600} _selected={{border:0}} _focus={{border:0 }} maxHeight={7} variant="unstyled" fontSize={"sm"} role="group"><HStack><Box transition= "all 0.3s ease"_groupHover={{ transform: 'translateY(-2px)'}}><BiMessageRoundedDots/></Box> <ReactLink _focus={{border:0 }} target="_blank" href="mailto:octave.dbc@gmail.com" _groupHover={{ textDecoration:"underline"}}>Say hello!</ReactLink></HStack></Button>
                   <Button _selected={{border:0}} _focus={{border:0 }} maxHeight={7} variant="unstyled" fontSize={"sm"} role="group" onClick={() => 
@@ -274,7 +274,7 @@ const IndexPage = () => {
                 </HStack>
                 <br/>
                 <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"light"} overflowWrap="break-word" >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Renewing the company business model and ensuring the long-term growth of a student-run accelerator; this included hands-on management of the Content, Marketing, Logistics, Finance & Community teams (including recruiting for various positions throughout), securing partnerships, sponsorship & professional's involvementand overseeing the creation of 15 startups through a hands-on involvement with the curriculum and logistics team.
                 </Heading>
               </Box>
             </Stack>
@@ -301,7 +301,10 @@ const IndexPage = () => {
                 </HStack>
                 <br/>
                 <Heading fontSize={{base: "sm", md: "md", '2xl': "lg"}} fontWeight={"light"} overflowWrap="break-word" >
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                My time at BlueCrest Capital acted as an eye-opening introduction to the world of finance. During the time I
+                spent there I had a coal faced exposure to the world of trading, in areas ranging from FX swaps to convertible
+                bonds. I also spent a significant amount of time in accounting and tax, which also enabled me to learn a lot
+                more about how a financial organization operates.
                 </Heading>
               </Box>
             </Stack>
