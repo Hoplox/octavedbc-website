@@ -30,6 +30,8 @@ const Page404 = () => {
         />
       </MotionBox>
 
+      <Text fontSize={"xs"}>Illustration by <Link href="https://storyset.com/">Freepick Stories</Link></Text>
+
       <Box marginY={16}>
         <Heading textAlign="center">Page not Found.</Heading>
 
