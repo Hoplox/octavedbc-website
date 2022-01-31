@@ -17,7 +17,7 @@ const Page404 = () => {
   return (
     <>
 
-    <Box textAlign={"left"} width={"100%"}>
+    <Box textAlign={"left"} width={{base: 384 ,md:1024}}>
       <MotionBox
         animate={{ y: 20 }}
         transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}

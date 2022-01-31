@@ -1,7 +1,7 @@
 /* Global Styling here */
 html {
     scroll-behavior: smooth;
-    background-color: #333;
+    background-color: #1f2022;
 }
 
 body {
@@ -10,10 +10,6 @@ body {
 
 mark {
   background-color: lightblue;
-}
-
-#pinkmark {
-  background-color: pink !important;
 }
 
 .inlineUnderline {
