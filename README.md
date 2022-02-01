@@ -1,4 +1,4 @@
-# octavedbc.com
+# octavedbc webfolio
  
 Designed for Octave DBC as a simple webfolio.
 
