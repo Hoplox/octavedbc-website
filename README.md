@@ -17,6 +17,8 @@ This webfolio is built using the following technologies:
 1. [Node.js](https://nodejs.org/)
 2. [npm](https://www.npmjs.com/)
 
+## Deploy using Vercel
+
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FHoplox%2Foctavedbc-website)
 
 ## License
