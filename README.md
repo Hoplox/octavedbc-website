@@ -2,6 +2,8 @@
  
 Designed for Octave DBC as a simple webfolio.
 
+[Preview](octavedbc.vercel.app)
+
 ## Overview
 
 This webfolio is built using the following technologies:
