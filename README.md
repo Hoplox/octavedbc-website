@@ -2,7 +2,7 @@
  
 Designed for Octave DBC as a simple webfolio.
 
-[Preview](octavedbc.vercel.app)
+[Preview](https://octavedbc.vercel.app)
 
 ## Overview
 
